@@ -1,0 +1,13 @@
+<nav class="mainnav">
+    <ul *ngIf="mostrar" class="social-icons">
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="https://twitter.com/">Twitter</a></li>
+    </ul>
+    <button class="mainnav__ghostitle">M&S</button>
+    <button type="button" (click)=" mostrar = !mostrar" class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </button>
+</nav>

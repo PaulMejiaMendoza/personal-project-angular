@@ -1,0 +1,41 @@
+//----------------------------------------
+// VARIABLES------------------------------
+
+
+//Colors-----------
+$primary:   #1e2847;
+$secondary: #d3bbaf;
+$third:     #fc4c4F;
+$fourth:    #f8f8f8;
+$success:   #66c226;
+$warning:   #f7b500;
+$danger:    #e02020;
+
+//Gray
+//----------------
+$gray-100: #e5e5e8;
+$gray-200: #dcdcdf;
+$gray-300: #c7c7cd;
+
+//Scaffolding
+//------------------------------
+$body-color: #000;
+$body-bg:    #fff;
+$link-decoration:   underline;
+$link-hover:        none;
+
+$paragraph-bottom:  1rem;
+
+//Font
+//----------------------------------------------------
+$font-primary:            "Roboto";
+$font-secondary:          "Open Sans";
+$font-family-global:      $font-primary, sans-serif;
+
+$font-size-title:      1.5rem;
+$font-size-subtitle:  1.25rem;
+$font-size-base:         1rem;
+$font-weight-light:       300;
+$font-weight-normal:      400;
+$font-weight-medium:      500;
+$font-weight-bold:        700;

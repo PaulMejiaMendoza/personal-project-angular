@@ -1,0 +1,32 @@
+.footer {
+    height: auto;
+    background-color: #1e2847;
+    padding: rem(20px);
+    font-family: 'Roboto';
+    .support {
+        margin-bottom: rem(20px);
+        .link {
+            color: #fff;
+            text-decoration: none;
+        }
+        .link--opac {
+            color: rgba(255, 255, 255, 0.4);
+        }
+    }
+    .discover {
+        margin-bottom: rem(20px);
+        .link {
+            color: #fff;
+            text-decoration: none;
+        }
+        .link--opac {
+            color: rgba(255, 255, 255, 0.4);
+        }
+    }
+    .copyright {
+        font-size: rem(16px);
+        color: #fff;
+        font-family: 'Roboto';
+        text-align: center;
+    }
+}

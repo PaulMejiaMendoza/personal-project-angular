@@ -1,0 +1,54 @@
+.search {
+    position: relative;
+    height: auto;
+    background-color: $secondary;
+    padding: rem(20px);
+    &__title {
+        font-family: $font-primary;
+        font-size: 1.5rem;
+        padding: 0 rem(20px);
+        text-align: center;
+        margin-bottom: rem(20px);
+    }
+    &__subtitle {
+        padding: 0 rem(20px);
+        text-align: center;
+        font-family: $font-primary;
+        margin-bottom: rem(30px);
+    }
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: $font-primary;
+        label {
+            height: rem(60px);
+            width: rem(215px);
+            text-align: center;
+            line-height: 4rem;
+        }
+        input {
+            height: rem(60px);
+            width: rem(218px);
+            font-family: $font-primary;
+            font-size: rem(18px);
+            text-align: center;
+            border: 2px solid $third;
+            border-radius: rem(50px 0 0 50px);
+            padding: rem(0 25px);
+        }
+        button {
+            width: rem(60px);
+            height: rem(60px);
+            background-color: $third;
+            border: none;
+            font-family: $font-primary;
+            font-size: 1rem;
+            border-radius: rem(0 50px 50px 0);
+            color: $body-bg;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}

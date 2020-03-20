@@ -1,75 +1,45 @@
-$icons: ( twitter: ( "ico": "\f099", "color": #55acee), facebook: ( "ico": "\f09a", "color": #3b5998), instagram: ( "ico": "\f16d", "color": #e65c34));
-.mainnav {
-    display: flex;
-    height: rem(80px);
-    background-color: $primary;
-    align-items: center;
-    &--login {
-        justify-content: center;
-    }
-    &--account {
-        justify-content: center;
-    }
-    .social-icons {
-        position: relative;
-        margin-left: rem(10px);
-        display: flex;
-        justify-content: center;
-        li+li {
-            margin-left: rem(10px);
-        }
-        a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 1.5rem;
-            height: 1.5rem;
-            border-radius: 50%;
-            color: #fff;
-            text-decoration: none;
-            font-size: 0;
-            &::before {
-                font-family: "FontAwesome";
-                font-size: 1rem;
+    $icons: ( twitter: ( "ico": "\f099", "color": #55acee, ), facebook: ( "ico": "\f09a", "color": #3b5998, ), instagram: ( "ico": "\f16d", "color": #E65C34, ), );
+    .my-stetic-nav {
+        background-color: $primary;
+        font-family: 'Roboto';
+        .mainnav {
+            margin-right: rem(15px);
+            &--login {
+                justify-content: center;
             }
-            @each $social,
-            $icon in $icons {
-                &[href*="#{$social}"] {
-                    background-color: map-get($icon, color);
+            &--account {
+                justify-content: center;
+            }
+            .social-icons {
+                display: flex;
+                margin-bottom: 0;
+                li+li {
+                    margin-left: rem(10px);
+                }
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    border-radius: 50%;
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 0;
                     &::before {
-                        content: map-get($icon, ico);
+                        font-family: 'FontAwesome';
+                        font-size: 1rem;
+                    }
+                    @each $social,
+                    $icon in $icons {
+                        &[href*="#{$social}"] {
+                            background-color: map-get($icon, color);
+                            &::before {
+                                content: map-get($icon, ico);
+                            }
+                        }
                     }
                 }
             }
         }
     }
-    &__ghostitle {
-        display: block;
-        width: rem(130px);
-        height: rem(20px);
-        border: none;
-        font-family: $font-primary;
-        text-decoration: none;
-        background-color: $primary;
-        color: $body-bg;
-        line-height: 1rem;
-        font-size: 1.5rem;
-        font-weight: $font-weight-bold;
-        cursor: pointer;
-    }
-    .hamburger {
-        background-color: inherit;
-        border: none;
-        padding: 0;
-        margin-left: auto;
-        margin-right: rem(25px);
-        outline: none;
-        cursor: pointer;
-        .line {
-            width: rem(30px);
-            height: rem(3px);
-            background-color: $body-bg;
-            margin: rem(5px);
-        }
-    }
-}

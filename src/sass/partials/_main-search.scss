@@ -1,16 +1,22 @@
 .search {
-    position: relative;
-    height: auto;
+    display: flex;
+    justify-content: center;
     background-color: $secondary;
     padding: rem(20px);
+    .search-center {
+        font-family: 'Roboto';
+        max-width: rem(768px);
+        justify-items: center;
+    }
     &__title {
         font-family: $font-primary;
-        font-size: 1.5rem;
+        font-size: $font-size-title;
         padding: 0 rem(20px);
         text-align: center;
         margin-bottom: rem(20px);
     }
     &__subtitle {
+        font-size: $font-size-subtitle;
         padding: 0 rem(20px);
         text-align: center;
         font-family: $font-primary;
@@ -19,17 +25,19 @@
     .form {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        font-family: $font-primary;
+        max-width: rem(300px);
+        margin: auto;
         label {
+            margin: auto;
+            font-size: $font-size-subtitle;
             height: rem(60px);
-            width: rem(215px);
+            width: auto;
             text-align: center;
             line-height: 4rem;
         }
         input {
             height: rem(60px);
-            width: rem(218px);
+            width: rem(220px);
             font-family: $font-primary;
             font-size: rem(18px);
             text-align: center;

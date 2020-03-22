@@ -22,7 +22,7 @@
         font-family: $font-primary;
         margin-bottom: rem(30px);
     }
-    .form {
+    .mainform {
         display: flex;
         flex-wrap: wrap;
         max-width: rem(300px);
@@ -44,6 +44,7 @@
             border: 2px solid $third;
             border-radius: rem(50px 0 0 50px);
             padding: rem(0 25px);
+            outline: none;
         }
         button {
             width: rem(60px);
@@ -54,6 +55,7 @@
             font-size: 1rem;
             border-radius: rem(0 50px 50px 0);
             color: $body-bg;
+            outline: none;
             &:hover {
                 color: $primary;
             }
